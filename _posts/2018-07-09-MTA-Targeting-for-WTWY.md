@@ -1,4 +1,7 @@
-# MTA Targets for WTWY Gala Campaign
+---
+layout: post
+title: MTA Targets for WTWY Gala Campaign
+---
 
 For the first week of Metis, we were given the opportunity to assist WomenTechWomenYes with their campaign targeting. WomenTechWomenYes will be hosting a gala fundraiser and will be looking to stage teams at MTA stations to solicit email addressses as well as sell tickets for the gala. Our task is to use data to provide a list of MTA stations for WTWY to reach their target audience. 
 
