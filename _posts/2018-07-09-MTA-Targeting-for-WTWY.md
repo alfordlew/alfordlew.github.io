@@ -2,7 +2,7 @@
 
 For the first week of Metis, we were given the opportunity to assist WomenTechWomenYes with their campaign targeting. WomenTechWomenYes will be hosting a gala fundraiser and will be looking to stage teams at MTA stations to solicit email addressses as well as sell tickets for the gala. Our task is to use data to provide a list of MTA stations for WTWY to reach their target audience. 
 
-# The Data
+## The Data
 
 To start our analysis, we pulled turnstile data from the [MTA website](http://web.mta.info/developers/turnstile.html). Of course, there were issues with the data and we had to correct it. We made the following assumptions to clean the data. 
 
@@ -10,10 +10,16 @@ To start our analysis, we pulled turnstile data from the [MTA website](http://we
   - Some counters were reset, which resulted in very large differences between counts. We eliminated these values by setting them to zero. 
   - There were multiple stations with the same name, we assumed that all stations that shared a name were the same station for the purpose of this study.
 
-# A First Look
+## A First Look
 After cleaning the data, we charted the top 10 stations by traffic. 
 
+![](https://github.com/alfordlew/alfordlew.github.io/blob/master/images/top10_chart.png?raw=true "Train Map")
+
+
 With that data, we looked at the map to make some iniital guesses at which stations we thought would be best. Here is the map with the top 10 stations circled and the Gala location identified. 
+
+![](https://github.com/alfordlew/alfordlew.github.io/blob/master/images/first_look.png?raw=true "Train Map")
+
 
 Our initial hypothesis were 
   - *Grand Central Station - 42nd St*
@@ -22,7 +28,7 @@ Our initial hypothesis were
   
 These assumptions were based on these stations being in the top 10 as well as distance to the Gala's location.
 
-# Refining the Targeting Method
+## Refining the Targeting Method
 
 To refine our targets, we identified additional factors that we believed were associated with WTWY's targets, people who would attend the Gala and donate. We used census data and brought in the following details for the areas around our stations. 
    
@@ -45,7 +51,7 @@ After joining our data, we made our initial model. We made all weights eqaul and
 		1.1 x (# of Graduate Degrees / max # of Grad Degrees)
 	)* 100 / 11.3
 
-# Recommendations
+## Recommendations
 
 Our model produced these top 3 stations.
 
